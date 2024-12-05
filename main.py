@@ -12,7 +12,7 @@ def say(text):
     speaker.Speak(text)
 
 
-def takeCommand():
+def takecommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         r.pause_threshold = 1
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     while True:
         print("Listening...")
-        query = takeCommand()
+        query = takecommand()
         sites = [["youtube", "https://www.youtube.com"], ["wikipedia", "https://www.wikipedia.com"],
                  ["linkedin", "www.linkedin.com/in/rashmi-ranjan-das-b85538262/"], ["Google", "https://www.google.com"]]
         for site in sites:
