@@ -11,7 +11,7 @@ def say(text):
     speaker.Speak(text)
 
 
-def takeCommand():
+def takeCommand() :
     r = sr.Recognizer()
     with sr.Microphone() as source:
         r.pause_threshold = 1
