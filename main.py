@@ -58,7 +58,7 @@ if __name__ == '__main__':
                 ["Github", r"C:\Users\Rashmi Ranjan Das\AppData\Local\GitHubDesktop\GitHubDesktop.exe"],
                 ["Vs code", r"C:\Users\Rashmi Ranjan Das\AppData\Local\Programs\Microsoft VS Code\Code.exe"]]
 
-        for app in apps:
+        for app in apps :
             if f"open {app[0]}".lower() in query.lower():
                 os.startfile(app[1])
                 say(f"Opening {app[0]} sir...")
